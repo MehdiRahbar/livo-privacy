@@ -15,7 +15,7 @@
 <body><main class="wrap"><article>
   <div class="brand">LiVo GUARDIAN</div>
   <h1>Privacy Policy</h1>
-  <p class="date">Effective and last updated: 4 September 2026</p>
+  <p class="date">Effective and last updated: 5 September 2026</p>
   <p>This policy explains how LiVo Guardian, published by Mehdi Rahbar under the LiVo name (“LiVo”, “we”, “us”), handles information in the LiVo Guardian mobile app and its trusted-contact web views. Contact: <a href="mailto:goodfortune.app.ss@gmail.com">goodfortune.app.ss@gmail.com</a>.</p>
   <p class="notice"><strong>Safety boundary:</strong> LiVo Guardian is a trusted-contact safety tool, not an emergency service. It does not automatically contact emergency services and cannot guarantee delivery. Contact the appropriate local emergency service directly whenever you can.</p>
 
@@ -26,7 +26,8 @@
   <div class="table"><table>
     <thead><tr><th>Category</th><th>Examples</th><th>Why</th></tr></thead>
     <tbody>
-      <tr><td>Account and identity</td><td>Phone number, display name, account and device identifiers, authentication and revocation records</td><td>Sign-in, account recovery, security, multi-device access</td></tr>
+      <tr><td>Account and identity</td><td>Display name, account and device identifiers, authentication and revocation records; Apple/Google identity identifiers in social-sign-in versions, or phone identity in earlier versions</td><td>Sign-in, account recovery, security, multi-device access</td></tr>
+      <tr><td>Store subscriptions</td><td>Account-bound purchase tokens or signed transactions, product, store environment, expiry, renewal and verification state</td><td>Verify purchases, restore access and prevent purchase reassignment or trial abuse. Card numbers are handled by Apple or Google, not Guardian.</td></tr>
       <tr><td>Trusted contacts and groups</td><td>Names and phone numbers entered by a user, group names, invitations, consented channels and membership</td><td>Create the user's trusted circle and route only selected alerts</td></tr>
       <tr><td>Location</td><td>Precise/current location, accuracy and timestamps during an active alert; the latest point for a separately enabled trusted-person share</td><td>Show selected trusted people where help is requested and whether a point is live or last known</td></tr>
       <tr><td>Safety activity</td><td>Yellow/Red level, check-ins, incident status, recipient responses, delivery state, timestamps</td><td>Operate and audit the safety workflow without claiming delivery that has not occurred</td></tr>
@@ -37,6 +38,7 @@
   </table></div>
   <p>LiVo Guardian does not request access to your phone address book. Trusted-contact details are entered deliberately inside the app. It does not use advertising identifiers, sell personal information, or use personal information for cross-app advertising or tracking.</p>
 
+  <p>Social sign-in sends the provider's signed identity token to our server for verification. It can contain a provider account identifier, email address or private-relay address, and verification claims. We retain the provider identifier needed for the Guardian account, not the raw sign-in token or its email field. Apple and Google process authentication under their own privacy policies. We do not request access to your Gmail messages, Drive files, contacts, or calendars.</p>
   <h2>3. Location in the background</h2>
   <p>With your device permission, LiVo Guardian can collect and transmit location in the background—when the app is closed or not in use—only while a safety alert you started is active or while you have separately enabled ongoing last-known-location sharing for a fully trusted accepted contact. Selected recipients can see this location until the alert/share ends or access is revoked. You can stop sharing and delete the latest stored trusted-location point in the app. Operating-system and network conditions can interrupt updates.</p>
 
@@ -62,6 +64,7 @@
     <li>Coarse regional counters: up to 90 days from the start of their six-hour bucket.</li>
     <li>Push and device credentials: until rotation, logout, revocation or account deletion as applicable.</li>
     <li>Account deletion: access is revoked immediately and bounded erasure is targeted within 30 days, except narrowly required legal/security records.</li>
+    <li>Minimal keyed or one-way hashes of trial identities and purchase claims may remain after deletion to prevent repeated free trials and reassignment of an existing store purchase. These are not used to restore deleted profile or location data. Apple and Google retain their own payment records under their policies.</li>
   </ul>
 
   <h2>7. Your controls and rights</h2>
@@ -75,6 +78,6 @@
 
   <h2>10. Changes and contact</h2>
   <p>We may update this policy as the service or law changes. Material changes will be disclosed in the app or on this page before they take effect where required. Questions or privacy requests: <a href="mailto:goodfortune.app.ss@gmail.com?subject=LiVo%20Guardian%20privacy">goodfortune.app.ss@gmail.com</a>.</p>
-  <p><a href="index.html">Support home</a> · <a href="delete-account.html">Delete account</a></p>
+  <p><a href="index.html">Support home</a> · <a href="terms.html">Terms and subscriptions</a> · <a href="delete-account.html">Delete account</a></p>
 </article></main></body>
 </html>
